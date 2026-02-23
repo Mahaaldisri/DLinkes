@@ -3,46 +3,69 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>روابطنا | Smart Soft</title>
-  <meta name="description" content="صفحة روابط احترافية شبيهة بـ Linktree من تطوير Smart Soft Company"/>
+  <title>روابطنا</title>
+  <meta name="description" content="صفحة روابط احترافية.">
   <meta name="theme-color" content="#0B1220"/>
   <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+
   <link rel="stylesheet" href="./css/style.css"/>
   <link rel="stylesheet" href="./css/links.css"/>
-  <meta property="og:title" content="روابطنا | Smart Soft">
+
+  <meta property="og:title" content="روابطنا">
   <meta property="og:description" content="تابعنا عبر الروابط الرسمية.">
   <meta property="og:image" content="./assets/logo.svg">
 </head>
 <body>
   <div class="container">
-    <div class="topbar">
-      <div class="brand">
-        <img src="./assets/bin.svg" alt="Smart Soft Company">
-        <div class="title">
-          <b>شركة سمارت سوفت</b>
-          <span>Smart Links</span>
+    <!-- Top header: shows SOURCE company branding (from Sheet Profile) -->
+    <header class="links-header">
+      <div class="brandline">
+        <div class="brand-left">
+          <img id="brandLogo" class="brandlogo" src="./assets/partner-logo.svg" alt="Logo">
+          <div class="brandtext">
+            <b id="brandName">اسم الشركة</b>
+            <span id="brandTag">صفحة الروابط الرسمية</span>
+          </div>
         </div>
-      </div>
-      <button id="themeBtn" class="btn" type="button" aria-label="Toggle theme">🌓</button>
-    </div>
 
-    <div class="hero" style="margin-top:16px">
+        <button id="themeBtn" class="btn" type="button" aria-label="Toggle theme">🌓</button>
+      </div>
+    </header>
+
+    <!-- Hero card -->
+    <section class="hero" aria-label="Profile">
       <div id="cover" class="cover"></div>
       <div class="profile">
-        <img id="avatar" class="avatar" src="./assets/bin.svg" alt="Avatar">
-        <div>
+        <img id="avatar" class="avatar" src="./assets/partner-logo.svg" alt="Avatar">
+        <div class="profiletext">
           <h1 id="name" class="name">روابطنا</h1>
           <p id="bio" class="bio">وصف مختصر…</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="links" class="linklist"></div>
+    <!-- Links -->
+    <main id="links" class="linklist" aria-label="Links"></main>
 
-    <div class="footer">
-      Developed by Smart Soft Company — 
-      <span class="small">AI: 00967 735098666 • الدعم: 00967 770522788 • contact@smart-soft.io</span>
-    </div>
+    <!-- Footer: always Smart Soft branding + contacts -->
+    <footer class="ss-footer">
+      <div class="ss-wrap">
+        <div class="ss-brand">
+          <img src="./assets/logo.svg" class="ss-logo" alt="Smart Soft Company">
+          <div class="ss-text">
+            <b>شركة سمارت سوفت</b>
+            <span>Developed by Smart Soft Company</span>
+          </div>
+        </div>
+
+        <div class="ss-contacts">
+          <a class="ss-pill" href="tel:00967735098666">AI: 00967 735098666</a>
+          <a class="ss-pill" href="tel:00967770522788">الدعم: 00967 770522788</a>
+          <a class="ss-pill" href="mailto:contact@smart-soft.io">contact@smart-soft.io</a>
+          <a class="ss-pill" href="https://smart-soft.io" target="_blank" rel="noopener">smart-soft.io</a>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
