@@ -51,7 +51,7 @@ export async function apiPost(action, body={}, token=null){
     method:"POST",
     mode:"cors",
     cache:"no-store",
-    headers: { "Content-Type":"application/json" },
+    headers: { "Content-Type":"text/plain;charset=utf-8" },
     body: JSON.stringify(payload)
   });
   const data = await res.json();
