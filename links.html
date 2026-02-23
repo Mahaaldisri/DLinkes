@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>روابطنا | Smart Soft</title>
+  <meta name="description" content="صفحة روابط احترافية شبيهة بـ Linktree من تطوير Smart Soft Company"/>
+  <meta name="theme-color" content="#0B1220"/>
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/links.css"/>
+  <meta property="og:title" content="روابطنا | Smart Soft">
+  <meta property="og:description" content="تابعنا عبر الروابط الرسمية.">
+  <meta property="og:image" content="./assets/logo.svg">
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="brand">
+        <img src="./assets/logo.svg" alt="Smart Soft Company">
+        <div class="title">
+          <b>شركة سمارت سوفت</b>
+          <span>Smart Links</span>
+        </div>
+      </div>
+      <button id="themeBtn" class="btn" type="button" aria-label="Toggle theme">🌓</button>
+    </div>
+
+    <div class="hero" style="margin-top:16px">
+      <div id="cover" class="cover"></div>
+      <div class="profile">
+        <img id="avatar" class="avatar" src="./assets/logo.svg" alt="Avatar">
+        <div>
+          <h1 id="name" class="name">روابطنا</h1>
+          <p id="bio" class="bio">وصف مختصر…</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="links" class="linklist"></div>
+
+    <div class="footer">
+      Developed by Smart Soft Company — 
+      <span class="small">AI: 00967 735098666 • الدعم: 00967 770522788 • contact@smart-soft.io</span>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./js/links.js"></script>
+</body>
+</html>
