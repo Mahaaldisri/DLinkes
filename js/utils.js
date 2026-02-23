@@ -19,7 +19,9 @@ export function initTheme(){
   const saved = localStorage.getItem("ss_theme");
   if(saved){ setTheme(saved); return; }
   // default: dark
-  setTheme("dark");
+  // setTheme("dark");
+  // default: light
+setTheme("light");
 }
 
 export function toast(msg){
